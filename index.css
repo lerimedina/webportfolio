@@ -1,1 +1,20 @@
-index.css
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Bebas Neue", sans-serif;
+}
+p{
+	font-family: "Montserrat", sans-serif;
+}
+.bg-custom-primary{
+	background-color: #675D50;
+}
+.bg-custom-secondary{
+	background-color: #F3DEBA;
+}
+.bg-custom-alt{
+	background-color: #A9907E;
+}

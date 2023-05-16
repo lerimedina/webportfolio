@@ -27,60 +27,83 @@
 	<body>
 
 		<!-- Navbar Section -->
-			<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-custom-primary">
-			  	<a class="navbar-brand" href="#">Leri Medina</a>
+			<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-custom-primary h3">
+			  	<a class="navbar-brand border rounded p-2 ml-3" href="#">Leri Medina</a>
 			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    	<span class="navbar-toggler-icon"></span>
 			  	</button>
 			  	<div class="collapse navbar-collapse" id="navbarNav">
-			    	<ul class="navbar-nav">
+			    	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item active">
-			        		<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+			        		<a class="nav-link" href="#landing">Home<span class="sr-only">(current)</span></a>
 			     	 	</li>
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="#landing">About Me</a>
+			        		<a class="nav-link" href="#about-me">About Me</a>
 			      		</li>
 			      		<li class="nav-item">
 			        		<a class="nav-link" href="#projects">Projects</a>
 			      		</li>
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="#contact">Contact</a>
-			      		</li>
-			      		<li class="nav-item">
 			        		<a class="nav-link" href="#tools">Tools</a>
 			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" href="#contact">Contact</a>
+			      		</li>
+			      		
 			    	</ul>
 			  	</div>
 			</nav>
 		<!-- End of Navbar Section -->
 
 		<!-- Main Content -->
-			<div class="container-fluid">
+			<div class="container-fluid p-3 p-md-3">
 
-				<!-- Landing Page Section-->
-					<!-- <div id="landing" class="container-fluid bg-custom-secondary min-vh-100 p-5">
-						<div class="p-5">
-							<div id="image" class="d-lg-flex">
-								<img class="mt-5 mt-md-0 rounded-circle" src="https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest?cb=20220525095157">
-							</div>
-						</div>
-					</div> -->
-					<div id="landing" class="container-fluid bg-custom-secondary min-vh-100 p-5 align-content-center">
-						<div class="container-fluid d-flex align-content-center">
-							<div class="d-inline">
-								<img class="mt-5 mt-md-0 rounded-circle" src="https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest?cb=20220525095157">
-							</div>
-							<div class="d-inline justify-content-between">
-								<h1>Leri C. Medina</h1>
-								<h2>Full Stack Web Developer</h2>
+				<!-- Landing Page -->
+					<div id="landing" class=" d-flex align-items-center justify-content-center container-fluid bg-custom-alt min-vh-100 p-5 ">
+						<div class="text-center col-md-9">
+							<h1 class="display-1 font-weight-bold ">WELCOME</h1>
+							<hr>
+							<p class="h1">THIS IS MY WEB DEVELOPMENT PORTFOLIO. FEEL FREE TO EXPLORE.</p>
+							<div>
+								<ul class="d-flex align-items-center justify-content-center d-inline h2 font-weight-bold list-group-horizontal list-inline">
+									<li><a href="https://www.facebook.com/yintvrtle/" class="text-dark m-3" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/ayinmedina/" class="text-dark m-3" target="_blank">Twitter</a></li>
+									<li><a href="https://www.linkedin.com/in/lerimedina/" class="text-dark m-3" target="_blank">LinkedIn</a></li>
+									<li><a href="https://gitlab.com/lerimedina" class="text-dark m-3" target="_blank">Gitlab</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-				<!-- End of Landing Page Section-->
+				<!-- End of Landing Page -->
+
+				<!-- About Me Page Section-->
+					<div id="about-me" class="bg-custom-secondary p-5 min-vh-75">
+						<h2 class="text-center font-weight-bold display-4">About Me</h2>
+
+						<div class="d-flex justify-content-center align-items-center flex-row p-5">
+
+							<div class="d-none d-lg-block offset-2">
+								<img class="mt-5 mt-md-0 rounded-circle " src="https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest?cb=20220525095157"  width="250">
+							</div>
+
+							<div class="row">
+								<div class="offset-2 col-md-9 m-0 text-md-left text-sm-center">
+									<h1 class="font-weight-bold">Leri C. Medina</h1>
+									<h3>Full Stack Web Developer</h3>
+									<p>
+										Hello! I am a <em>Bachelor of Science in Computer Science degree holder</em> from Technological Institute of the Philippines-Quezon City. I majored in Intelligent Systems and shares great interest in Natural Language Processing. I bake, sink myself into music, or play the FPS game <em>Valorant</em> from Riot games on my downtime. Want to work with me? <a href="#contact" class="text-dark font-weight-bold">Contact me!</a>
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- End of About Me Page Section-->
 
 				<!-- Projects Section -->
 					<div id="projects" class="container-fluid bg-custom-alt min-vh-100 p-5 ">
-						<h2 class="text-center font-weight-bold">Projects</h2>
+						<h2 class="text-center font-weight-bold display-4">Projects</h2>
 								<div class="d-lg-flex justify-content-center p-md-5 ">
 
 									<!-- Project 1 Card -->
@@ -89,29 +112,29 @@
 										  	<img src="./images/project1.PNG" class="card-img-top">
 										    <h5 class="card-title mt-3 bg-dark text-light text-center font-weight-bold p-2">Bootstrap Components</h5>
 										    <p class="card-text text-light"> This project showcases different Bootstrap Components with respect to mobile responsiveness and a lot more. This specific project tackles about forms, navbar, card, carousel, and dmodal. This project was made as a requirement for Zuitt's Front-end Program.</p>
-										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s12/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark">Link to Project Repository</a>
+										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s12/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark" target="_blank">Link to Project Repository</a>
 										  </div>
 										</div>
 									<!-- End Project 1 Card -->
 
 									<!-- Project 2 Card -->
-										<div class="card bg-custom-primary col-lg-4 mb-5 mb-lg-0 mr-lg-5 ml-xl-5">
+										<div class="card bg-custom-primary col-lg-4 mb-5 mb-lg-0 ml-lg-5 mr-lg-5 ml-xl-5">
 										  <div class="card-body">
 										    <img src="./images/project2.PNG" class="card-img-top">
 										    <h5 class="card-title mt-3 bg-dark text-light text-center font-weight-bold p-2">Bootstrap Flex</h5>
 										    <p class="card-text text-light"> This project demonstrates Bootstrap's Utility Flex. That quickly manages the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. This project was made as a requirement for Zuitt's Front-end Program</p>
-										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s11/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark">Link to Project Repository</a>
+										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s11/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark" target="_blank">Link to Project Repository</a>
 										  </div>
 										</div>
 									<!-- End Project 2 Card -->
 
 									<!-- Project 3 Card -->
-										<div class="card bg-custom-primary col-lg-4 mb-5 mb-lg-0 ">
+										<div class="card bg-custom-primary col-lg-4 mb-5 mb-lg-0">
 										  <div class="card-body">
 										    <img src="./images/project3.PNG" class="card-img-top">
 										    <h5 class="card-title mt-3 bg-dark text-light text-center font-weight-bold p-2">CSS Styling Properties and Positioning</h5>
 										    <p class="card-text text-light">This project served as an introduction to Bootstrap. Positioning, and modifying different properties using CSS gives a good look on how Bootstrap makes it easy for developers to do all of the modifying using its framework. </p>
-										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s08/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark">Link to Project Repository</a>
+										    <a href="https://gitlab.com/b290-medina/frontend/-/tree/master/s08/activity" class="card-link bg-custom-secondary font-weight-bold p-1 text-dark" target="_blank">Link to Project Repository</a>
 										  </div>
 										</div>
 									<!-- Project 3 Card -->
@@ -121,10 +144,78 @@
 					</div>
 				<!-- End of Projects Section -->
 
+				<!-- Tools Section -->
+					<div id="tools" class="bg-custom-secondary p-5">
+						<h2 class="text-center font-weight-bold display-4">Tools</h2>
+						<div class="container-fluid">
+							<div class="text-light row text-center text-dark font-weight-bold">
+								<div class="pt-3 pb-3 col-md-4 m-auto">
+									<h4 class="font-weight-bold bg-custom-alt p-1">Front-End</h4>
+									<ul id="frontend-tools" class="list-unstyled">
+										<li>
+											Chrome Dev Tools
+										</li>
+										<li>
+											HTML
+										</li>
+										<li>
+											CSS
+										</li>
+										<li>
+											Bootstrap
+										</li>
+									</ul>
+								</div>
+								<div class="pt-3 pb-3 col-md-4 m-auto">
+									<h4 class="font-weight-bold bg-custom-alt p-1">Back-End</h4>
+									<ul id="backend-tools" class="list-unstyled">
+										<li>
+											MongoDB
+										</li>
+										<li>
+											Javascript
+										</li>
+										<li>
+											Node.js
+										</li>
+										<li>
+											Express.js
+										</li>
+										<li>
+											Rest API
+										</li>
+										<li>
+											Postman
+										</li>
+									</ul>
+								</div>
+								<div class="pt-3 pb-3 col-md-4 m-auto">
+									<h4 class="font-weight-bold bg-custom-alt p-1bg-custom-alt p-1">Full-Stack</h4>
+									<ul id="fullstack-tools" class="list-unstyled">
+										<li>
+											Back-End API
+										</li>
+										<li>
+											DOM Manipulation
+										</li>
+										<li>
+											Wireframe Mockup
+										</li>
+										<li>
+											React.js
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- End of Tools Section -->
+
+
 				<!-- Contacts Section -->
-					<div id="contact" class="bg-custom-secondary text-dark p-5 d-flex flex-column">
-						<div class="bg-custom-alt p-5 ">
-							<h2 class="text-center font-weight-bold">Contact Me</h2>
+					<div id="contact" class="bg-custom-alt text-dark p-5 d-flex flex-column">
+						<div class="bg-custom-secondary p-5 border rounded border-0">
+							<h2 class="text-center font-weight-bold display-4">Contact Me</h2>
 							<div>
 								<form>
 									<div class="form-row">
@@ -142,14 +233,33 @@
 									    <textarea class="form-control" id="message" rows="3"></textarea>
 									  </div>
 									  <button type="button" class="btn btn-dark pr-5 pl-5" data-toggle="modal" data-target="#modal">Send</button>
+									  <!-- Modal -->
+									  	<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  	  <div class="modal-dialog">
+									  	    <div class="modal-content">
+									  	      <div class="modal-header">
+									  	        <h5 class="modal-title text-dark font-weight-bold" id="exampleModalLabel">Thank you for contacting us!</h5>
+									  	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  	          <span aria-hidden="true">&times;</span>
+									  	        </button>
+									  	      </div>
+									  	      <div class="modal-body">
+									  	       	<p class="text-center text-dark font-weight-bold">Message Successfully Sent!</p>
+									  	      </div>
+									  	      <div class="modal-footer">
+									  	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									  	      </div>
+									  	    </div>
+									  	  </div>
+									  	</div>
+									  <!-- End of Modal -->
 								</form>
 							</div>
 						</div>
 					</div>
 				<!-- End of Contacts Section -->
 
-				<!-- Tools Section -->
-				<!-- End of Tools Section -->
+
 			</div>
 			
 
@@ -157,7 +267,7 @@
 		<!-- End of Main Content -->
 
 		<!-- Footer -->
-	    <nav class="container-fluid navbar bg-custom-primary justify-content-center font-weight-bold">
+	    <nav class="container-fluid navbar bg-custom-primary justify-content-center font-weight-bold align-items-center">
 	    	<div>
 	    		<p class="custom-text">Online Portfolio by Leri C. Medina</p>
 	    	</div>
